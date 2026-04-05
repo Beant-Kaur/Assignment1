@@ -1,0 +1,13 @@
+#Issues:
+I have observed following issues in the dashboard:
+          Sidebar is not on left 
+          Cards are not in row 
+          Header not aligned 
+          Button may or may not work
+
+#Solutions:
+         In style1.css ,I have Changed display from block(vertical layout) to flex(horizontal layout)
+
+
+
+
