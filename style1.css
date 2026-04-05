@@ -21,13 +21,14 @@
 .dashboard-sidebar {
   width: 250px;  
   display: flex;
+  max-height: 550px;  
   flex-direction: column;
   justify-content: space-between;
-  padding:10px;
-   background: lightgray;
+  padding: 20px;
+  background: lightgray;
 }
 .sidebar-items{
-  margin: 20px;
+  
   background-color: rgb(230, 248, 248);
   border-radius: 12px;
   padding: 10px;
