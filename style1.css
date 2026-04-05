@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background: lightgray;
+}
+
+.main {
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  width: 200px;
+  height: 100px;
+  background: pink;
+  margin: 10px;
+}
