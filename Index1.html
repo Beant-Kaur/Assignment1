@@ -6,8 +6,10 @@
 </head>
 <body>
 
-<div id = "dashboard-head">
+<div id = "header">
+
   <div >Dashboard</div>
+
   <div id="dashboard-nav-right">
     <span>Home</span>
     <span>Profile</span>
@@ -17,21 +19,21 @@
 
 <div class="container">
 
-  <div class="sidebar">
-    <div>Menu 1</div>
-    <div>Menu 2</div>
-    <div>Menu 3</div>
+  <div class="dashboard-sidebar">
+    <div class="sidebar-items">Menu 1</div>
+    <div class="sidebar-items" >Menu 2</div>
+    <div class="sidebar-items" >Menu 3</div>
   </div>
 
-  <div class="main">
+  <div class="dashboard-main">
 
-    <div class="cards">
+    <div class="dashboard-content">
       <div class="card">Users</div>
       <div class="card">Orders</div>
       <div class="card">Revenue</div>
     </div>
 
-    <div>
+    <div class="button">
       <button onclick="loadData()">Load Data</button>
     </div>
 
