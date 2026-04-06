@@ -1,19 +1,38 @@
-1.
-#Issues:
-I have observed following issues in the dashboard:
-          Sidebar is not on left 
-          Cards are not in row 
-          Header not aligned 
-          Button not work
+1. What layout issues did you find?
+Initially, the layout was not properly aligned. The sidebar 
+and main content were not placed correctly side by side.The
+header items were also not aligned in one row. The cards 
+were not appearing in proper rows and spacing between them
+was not consistent.On smaller screens, the layout wasbreaking.
 
 
-2.
-#Solutions:
-         In style1.css ,I have Changed display from block(vertical layout) to flex(horizontal layout)
-         Dashboard header arranged by space between 
-         changed slidebar 
-         main content aligned between and justified
+2. How did you fix them?
+I used flexbox to fix the layout. I applied display: flex to
+align the sidebar and main content. For the header, I used 
+justify-content: space-between to place title on the left 
+and navigation on the right. For cards, I used flex-wrap 
+and gap so they can appear in rows and adjust properly on
+smaller screens.
 
+3.What was the JavaScript bug?
+The main issue was in the loop where var was used. Because
+of this, setTimeout was not working correctly and all 
+values were not displayed properly. Also, innerHTML was
+used again and again which is not efficient.
 
+4. Why did it happen?
+The problem happened because var does not create a new 
+value for each loop iteration. So when setTimeout executed,
+it used the final value of i. Also, innerHTML rewrites the
+whole content again and again which makes it slow.
 
+5.What improvements did you make?
+I replaced var with let to fix the issue. I used i * 1000 in
+setTimeout so data loads one by one. I replaced innerHTML 
+with createElement and appendChild. I also added a loading
+message and error message to improve user experience.
 
+6.Additional Note
+I worked on a separate branch (feature/dashboard-fix) and
+later merged the changes into the main branch after 
+resolving conflicts.
