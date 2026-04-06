@@ -1,10 +1,10 @@
+
 1. What layout issues did you find?
 Initially, the layout was not properly aligned. The sidebar 
 and main content were not placed correctly side by side.The
 header items were also not aligned in one row. The cards 
 were not appearing in proper rows and spacing between them
 was not consistent.On smaller screens, the layout wasbreaking.
-
 
 2. How did you fix them?
 I used flexbox to fix the layout. I applied display: flex to
@@ -13,6 +13,7 @@ justify-content: space-between to place title on the left
 and navigation on the right. For cards, I used flex-wrap 
 and gap so they can appear in rows and adjust properly on
 smaller screens.
+
 
 3.What was the JavaScript bug?
 The main issue was in the loop where var was used. Because
